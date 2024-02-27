@@ -72,7 +72,7 @@ img {
   display: none;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   #toggle {
     display: flex;
     position: relative;
