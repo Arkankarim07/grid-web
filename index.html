@@ -1,16 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <nav>
         <span>Arkan</span>
 
-        <ul>
+        <div class="toggle" id="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul id="menu" class="menu">
             <li>Home</li>
             <li>About</li>
             <li>Contact</li>
@@ -27,5 +35,16 @@
             <img width="500" src="img/img.jpg" alt="">
         </div>
     </section>
+
+
+    <script>
+        const Toggle = document.getElementById('toggle')
+        const Navbar = document.getElementById('menu')
+
+        Toggle.addEventListener('click', () => {
+            Navbar.classList.toggle('active')
+        })
+    </script>
 </body>
+
 </html>
